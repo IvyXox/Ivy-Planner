@@ -1,0 +1,115 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <title class="title">Profil bearbeiten | Ivy Planner</title>
+  <link rel="icon" href="../pictures/TitleIcon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../style/stylesheet.css" />
+  <style>
+    table {
+        border-collapse: collapse;
+        width: 50%;
+
+    }
+    
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>    
+</head>
+
+<body>
+<!-- Header + Navbar -->
+    <div class="header">
+            <h1 class="titletxt">Ivy Planner</h1>
+        </div>
+                <div class="nav" id="nav">
+                    <div class="container">
+                      <ul>
+                          <a href="index.html"><li>Main</li></a>
+                          <a href="planer.html"><li>Planer</li></a>
+                          <a href="subjects.html"><li>Fächerübersicht</li></a>
+                          <a href="about.html"><li>About</li></a>
+                          <a href="contact.html"><li>Kontakt</li></a>
+                          <a href="profile.html"><li>Profil</li></a>
+                      </ul>
+                    </div>
+                 </div>
+    
+        <script>
+            // When the user scrolls the page "offscreen", execute thisFunction 
+            window.onscroll = function() {thisFunction()};
+            
+            // Get the navbar
+            var nav = document.getElementById("nav");
+            
+            // Get the offset position of the navbar
+            var sticky = nav.offsetTop;
+            
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function thisFunction() {
+              if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky")
+              } else {
+                nav.classList.remove("sticky");
+              }
+            }</script>
+
+<div class="tablediv">
+ <table>
+   <tr>
+     <td><h3 class="tableheader">Dein Profil</h3></td>
+    </tr>
+    <tr>
+      <td><h4>Name</h4></td>
+      <td>Max</td>
+    </tr>
+    <tr>
+      <td><h4>Email</td></h4>
+      <td>MaxMuster@gmx.de</td>
+    </tr>
+    <tr>
+        <td><h4>Klasse</h4></td>
+        <td>11</td>
+      </tr>
+    <tr>
+        <td><h4>Schule</h4></td>
+        <td>Gymnasium</td>
+      </tr>
+    <tr>
+      <td><h4>Bundesland</h4></td>
+      <td>NRW</td>
+    </tr> 
+    <tr>
+      <td><h3 class="tableheader">Account & Einstellungen</h3></td>
+    </tr>
+      <tr>
+        <td><h4>Name</h4></td>
+        <td>Max</td>
+      </tr>
+      <tr>
+        <td><h4>Email</td></h4>
+        <td>MaxMuster@gmx.de</td>
+      </tr>
+      <tr>
+          <td><h4>Schule</h4></td>
+          <td>Gymnasium</td>
+        </tr>
+      <tr>
+        <td><h4>Bundesland</h4></td>
+        <td>NRW</td>
+      </tr>
+    </table>
+  </div>
+
+   <footer class="footer">
+      <p><em>Impressum</em></p>
+      <p>Ivys-Notenplaner@gmx.de</p>
+      <p><a href="https://twitter.com/Ivy_ada_Luvlce" target="_blank">Twitter</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Registrierung | Ivy's Notenplaner</title>
+    <link rel="icon" href="../pictures/TitleIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/stylesheet.css" />
+</head>
+<body>
+    <div class="header">
+        <h1 class="titletxt">Ivy's Notenplaner</h1>
+    </div>
+            <div class="nav" id="nav">
+                <div class="container">
+                  <ul>
+                    <a href="login.html"><li>Login</li></a>
+                    <a href="index.html"><li>Main</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="contact.html"><li>Kontakt</li></a>
+                  </ul>
+                </div>
+             </div>
+
+    <script>
+        // When the user scrolls the page "offscreen", execute thisFunction 
+        window.onscroll = function() {thisFunction()};
+        
+        // Get the navbar
+        var nav = document.getElementById("nav");
+        
+        // Get the offset position of the navbar
+        var sticky = nav.offsetTop;
+        
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function thisFunction() {
+          if (window.pageYOffset >= sticky) {
+            nav.classList.add("sticky")
+          } else {
+            nav.classList.remove("sticky");
+          }
+        }</script>
+
+<!--Registry form-->
+<form class='form2' action='login.py' method='post' enctype="multipart/form=data">      
+
+  <div class="margin">
+  Vorname:<input type='text' id="userName" class='logp' name='userName'>
+  Nachname:<input type='text' id="userLastName" class='logp' name='userLastName'>
+  Email-Adresse: <input type="text" class='logp' id="userEmail" name='userEmail'>
+  </div>
+  <div class="margin">
+  Wähle ein Passwort:<input type='password' class='logp' name='userPassword'>
+  Wiederhole dein Passwort: <input type='password' class='logp' name='userPassword'>
+  </div>
+
+  <a href="../loggedin/index.html"><input type='submit' value='Abschicken' name="submit" class="btn"></a>
+</form>
+
+<footer class="footer">
+  <p><em>Impressum</em></p>
+  <p>Ivys-Notenplaner@gmx.de</p>
+  <p><a href="https://twitter.com/Ivy_Luvlce" target="_blank">Twitter</a></p>
+</footer>
+
+</body>
+</html>

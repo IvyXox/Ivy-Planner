@@ -1,0 +1,79 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <title class="title">Profil | Ivy Planner</title>
+    <link rel="icon" href="../pictures/TitleIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/stylesheet.css" />
+</head>
+
+<body>
+<!-- Header + Navbar -->
+    <div class="header">
+            <h1 class="titletxt">Ivy Planner</h1>
+        </div>
+                <div class="nav" id="nav">
+                    <div class="container">
+                      <ul>
+                          <a href="index.html"><li>Main</li></a>
+                          <a href="planer.html"><li>Planer</li></a>
+                          <a href="subjects.html"><li>Fächerübersicht</li></a>
+                          <a href="about.html"><li>About</li></a>
+                          <a href="contact.html"><li>Kontakt</li></a>
+                          <a href="profile.html"><li>Profil</li></a>
+                      </ul>
+                    </div>
+                 </div>
+    
+        <script>
+            // When User scrolls offscreen", execute thisFunction 
+            window.onscroll = function() {thisFunction()};
+            var nav = document.getElementById("nav");
+            var sticky = nav.offsetTop;
+            function thisFunction() {
+              if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky")
+              } else {
+                nav.classList.remove("sticky");
+              }
+            }</script>
+
+
+<div class="profilewhole">
+<div class= "profile">
+  <div class= "profiletxt">
+     <h2>Dein Profil</h2> 
+
+     <span ><h4>Name:</h4> <p>Max</p></span>
+     <h4>Email:</h4> <p>MaxMuster@gmx.de</p>
+     <h4>Klasse: </h4> <p>11</p>
+     <h4>Schule:</h4> <p>Gymnasium</p>
+     <h4>Bundesland:</h4> <p>NRW</p>
+
+  <input type="button" value="bearbeiten" onclick="location.href='profileChange.html'" class="btn">   
+  </div>
+</div>
+
+<div class= "profile">
+        <div class= "profiletxt">
+           <h2>Account & Einstellungen</h2> 
+
+           <h4>Privatsphäre:</h4> <p>Öffentlich</p>
+           <h4>User-Name:</h4> <p>MaxM_98</p>
+           <h4>Passwort:</h4> <p>********</p>
+
+       <input type="button" value="bearbeiten" onclick="location.href='profileChange.html'" class="btn"> 
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p><em>Impressum</em></p>
+        <p>Ivys-Notenplaner@gmx.de</p>
+          <div class="tooltip">
+            <p><a href="https://twitter.com/Ivy_Luvlce" target="_blank">Twitter<span class="tooltiptext">Mein Twitter</span></a></p>
+         </div>
+      </footer>
+</body>
+</html>

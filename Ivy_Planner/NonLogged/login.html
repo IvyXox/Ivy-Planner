@@ -1,0 +1,58 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <title class="title">Login | Ivy Planner</title>
+    <link rel="icon" href="../pictures/TitleIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/stylesheet.css" />
+</head>
+<body>
+    <!-- Header + Navbar -->
+    <div class="header">
+            <h1 class="titletxt">Ivy Planner</h1>
+        </div>
+            <div class="nav" id="nav">
+                <div class="container">
+                <ul>
+                    <a href="login.html"><li>Login</li></a>
+                    <a href="index.html"><li>Main</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="contact.html"><li>Kontakt</li></a>
+                </ul>
+            </div>
+        </div>
+    
+        <script>
+           // When User scrolls offscreen", execute thisFunction 
+            window.onscroll = function() {thisFunction()};
+            var nav = document.getElementById("nav");
+            var sticky = nav.offsetTop;
+            function thisFunction() {
+                if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky")
+                } else {
+                nav.classList.remove("sticky");
+                 }
+            }</script>
+
+<!--Login form-->
+    <form class='form2' action='login.py' method='post' enctype="multipart/form=data">
+        
+        <div class="margin">
+        Email:<input type='text' placeholder="MaxMuster@mail.de" class='logp' name='userEmail'>
+        Passwort:<input type='password' placeholder="Passwort" class='logp' name='userPassword'>
+        </div>
+        
+        <a href="../loggedin/index.html"><input type='submit' value='Login' name="submit" class="btn"></a>
+    </form>
+
+    <div class="margin loginform"><p class="description"><em>Logge dich mit deinem Account ein, oder <a href=registry.html>registriere</a> dich als neuer Nutzer.</em></p></div>
+    
+    <footer class="footer">
+            <p><em>Impressum</em></p>
+            <p>Ivys-Notenplaner@gmx.de</p>
+            <p><a href="https://twitter.com/Ivy_Luvlce" target="_blank">Twitter</a></p>
+        </footer>
+</body>
+</html>

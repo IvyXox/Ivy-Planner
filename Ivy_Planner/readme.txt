@@ -1,0 +1,2 @@
+Eine Website, die eingegebene Noten speichern soll und momentane Defizite und den Notenschnitt berechnen soll.
+Das wird in Zukunft um einen Schülerplaner erweitert, der genauere Angaben, wie Klausuren etc. beinhaltet.

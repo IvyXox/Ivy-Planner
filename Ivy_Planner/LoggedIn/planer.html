@@ -1,0 +1,153 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Kalender | Ivy Planner</title>
+    <link rel="icon" href="../pictures/TitleIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/calendarstyle.css" />
+</head>
+
+<body>
+<!-- Header + Navbar -->
+<div class="header">
+        <h1 class="titletxt">Ivy Planner</h1>
+    </div>
+            <div class="nav" id="nav">
+                <div class="container">
+                  <ul>
+                    <a href="index.html"><li>Main</li></a>
+                    <a href="planer.html"><li>Kalender</li></a>
+                    <a href="subjects.html"><li>Fächerübersicht</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="contact.html"><li>Kontakt</li></a>
+                    <a href="profile.html"><li>Profil</li></a>
+                  </ul>
+                </div>
+             </div>
+
+    <script>
+        // When the user scrolls the page "offscreen", execute thisFunction 
+        window.onscroll = function() {thisFunction()};
+        
+        // Get the navbar
+        var nav = document.getElementById("nav");
+        
+        // Get the offset position of the navbar
+        var sticky = nav.offsetTop;
+        
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function thisFunction() {
+          if (window.pageYOffset >= sticky) {
+            nav.classList.add("sticky")
+          } else {
+            nav.classList.remove("sticky");
+          }
+        }</script>
+
+
+    <div class="wrapper">
+            <main>
+              <div class="toolbar">
+                <div class="toggle">
+                  <div class="toggle__option">Woche</div>
+                  <div class="toggle__option toggle__option--selected">Monat</div>
+                </div>
+                <div class="current-month">Oktober 2018</div>
+                <div class="search-input">
+                  <input type="text" placeholder="Wonach suchst du?">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+              <div class="calendar">
+                <div class="calendar__header">
+                  <div>Mo</div>
+                  <div>Di</div>
+                  <div>Mi</div>
+                  <div>Do</div>
+                  <div>Fr</div>
+                  <div>Sa</div>
+                  <div>So</div>
+                </div>
+                <div class="calendar__week">
+                  <div class="calendar__day day">1</div>
+                  <div class="calendar__day day">2</div>
+                  <div class="calendar__day day">3</div>
+                  <div class="calendar__day day">4</div>
+                  <div class="calendar__day day">5</div>
+                  <div class="calendar__day day">6</div>
+                  <div class="calendar__day day">7</div>
+                </div>
+                <div class="calendar__week">
+                  <div class="calendar__day day">8</div>
+                  <div class="calendar__day day">9</div>
+                  <div class="calendar__day day">10</div>
+                  <div class="calendar__day day">11</div>
+                  <div class="calendar__day day">12</div>
+                  <div class="calendar__day day">13</div>
+                  <div class="calendar__day day">14</div>        
+                </div>
+                <div class="calendar__week">
+                  <div class="calendar__day day">15</div>
+                  <div class="calendar__day day">16</div>
+                  <div class="calendar__day day">17</div>
+                  <div class="calendar__day day">18</div>
+                  <div class="calendar__day day">19</div>
+                  <div class="calendar__day day">20</div>
+                  <div class="calendar__day day">21</div>    
+                </div>
+                <div class="calendar__week">
+                  <div class="calendar__day day">22</div>
+                  <div class="calendar__day day">23</div>
+                  <div class="calendar__day day">24</div>
+                  <div class="calendar__day day">25</div>
+                  <div class="calendar__day day">26</div> 
+                  <div class="calendar__day day">27</div> 
+                  <div class="calendar__day day">28</div> 
+                </div>
+                <div class="calendar__week">
+                  <div class="calendar__day day">29</div>
+                  <div class="calendar__day day">30</div>
+                  <div class="calendar__day day">31</div>
+                  <div class="calendar__day day">1</div>
+                  <div class="calendar__day day">2</div>
+                  <div class="calendar__day day">3</div>
+                  <div class="calendar__day day">4</div>
+                </div>
+              </div>
+            </main>
+            <sidebar>
+              <nav class="menu">
+                <a class="menu__item" href="#">
+                  <i class="menu__icon fa fa-home"></i>
+                  <span class="menu__text">Übersicht</span>
+                </a>
+                <a class="menu__item" href="#">
+                  <i class="menu__icon fa fa-envelope"></i>
+                  <span class="menu__text">Klausuren</span>
+                </a>
+                <a class="menu__item" href="#">
+                  <i class="menu__icon fa fa-list"></i>
+                  <span class="menu__text">Hausaufgaben</span>
+                </a>
+                <a class="menu__item menu__item--active" href="#">
+                  <i class="menu__icon fa fa-calendar"></i>
+                  <span class="menu__text">Ziele</span>
+                </a>
+                <a class="menu__item" href="#">
+                  <i class="menu__icon fa fa-bar-chart"></i>
+                  <span class="menu__text">Veranstaltungen</span>
+                </a>
+              </nav>
+              <div class="copyright">copyright &copy; 2018</div>
+            </sidebar>
+          </div>
+          
+<footer class="footer">
+    <p>IvyPlanner@gmx.de</p>
+    <p><a href="https://twitter.com/Ivy_Luvlce" target="_blank">Twitter</a></p>
+    <p>copyright &copy; 2018</p>
+</footer>
+</body>
+</html>
