@@ -37,20 +37,22 @@
               margin: 10px;
           }
           .form{
-              margin: 25px 500px;
-              text-align: center;
-              align-content: center;
-              float: center; 
-              background-color: rgba(146, 143, 143, 0.37);
-              padding:10px;    
-          }
-          .form2{
-            margin: 25px 500px;
+            margin: 5% 25%;
+            padding: 0% 30%;
             text-align: center;
             align-content: center;
             float: center; 
             background-color: rgba(212, 212, 212, 0.575);
-            padding:10px;
+            padding:2%;
+            border-radius: 15px;
+          }
+          .form2{
+            margin: 5% 20%;
+            text-align: center;
+            align-content: center;
+            float: center; 
+            background-color: rgba(212, 212, 212, 0.575);
+            padding:2%;
             border-radius: 15px;
           }
           .button{
@@ -236,3 +238,7 @@
           
 
           }
+          .bottomspace {
+            padding-bottom: 15%;
+          }
+
