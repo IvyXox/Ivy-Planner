@@ -1,5 +1,5 @@
 # Ivy-Planner
-Website um Notenschnitte und Defizite zu berechnen. 
+Website um Notenschnitte & Defizite zu berechnen und Klausurteimine & Abgabetermine für Hausaufgaben/Referate zu speichern.  
 </br>
 Später Teil einer größeren Webanwendung, die **Klausurergebnisse** aufzeichnet, **Stundenpläne** & **Unterrichtsinhalte** 
 festhält und übersichtlich darstellt.
